@@ -1,17 +1,15 @@
+import CustomNavlink from "./CustomNavLink";
 import style from "./Navbar.module.css";
-import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className={style.navbar}>
-      <Link className={style.link} to={"home"}>
-        Home
-      </Link>
-      <Link className={style.link} to={"home"}>
-        Home
-      </Link>
-      <Link className={style.link} to={"About"}>
-        About
-      </Link>
+      {/* <img src="" alt="" /> */}
+      <div className={style.links}>
+        <CustomNavlink to={"home"} label="Home" />
+        <CustomNavlink to={"workexperience"} label="Work Experience" />
+        <CustomNavlink to={"About"} label="About" />
+        <CustomNavlink to={"Contact"} label="Contact" />
+      </div>
     </nav>
   );
 };

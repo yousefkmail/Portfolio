@@ -4,4 +4,24 @@
   box-sizing: border-box;
   background-color: black;
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.themecolor {
+  color: #ff6600;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff6600;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6600b3;
 }

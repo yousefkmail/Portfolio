@@ -1,5 +1,20 @@
 .p {
   max-width: 400px;
-  padding: 20px;
+  margin: 20px 0;
   line-height: 2rem;
+  font-size: 1.125rem;
+  opacity: 0;
+  transition: all ease-in-out 1s;
+}
+
+.main {
+  margin: 200px 20%;
+}
+
+.title {
+  font-size: 46px;
+}
+
+.show {
+  opacity: 1;
 }
