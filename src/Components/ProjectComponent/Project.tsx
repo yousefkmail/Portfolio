@@ -1,10 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import style from "./Project.module.css";
-import {
-  faGithub,
-  faYoutube,
-  faGooglePlay,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import image from "../../assets/google-play-png-logo-3798.png";
 interface ProjectProps {
   bgimage: string;

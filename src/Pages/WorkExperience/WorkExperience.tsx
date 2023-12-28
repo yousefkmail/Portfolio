@@ -1,6 +1,5 @@
 import Project from "../../Components/ProjectComponent/Project";
 import style from "./WorkExperience.module.css";
-import RazerLOGO from "../../assets/Razer-Logo-700x394.png";
 import VFXSS from "../../assets/VFXSS.png";
 import PLIGSS from "../../assets/Wee-02.png";
 const WorkExperience = () => {
