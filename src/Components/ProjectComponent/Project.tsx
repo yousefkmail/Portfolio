@@ -1,27 +1,66 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import style from "./Project.module.css";
+import {
+  faGithub,
+  faYoutube,
+  faGooglePlay,
+} from "@fortawesome/free-brands-svg-icons";
+import image from "../../assets/google-play-png-logo-3798.png";
 interface ProjectProps {
+  bgimage: string;
   title: string;
-  githubUlR: string;
+  githubURL?: string;
+  youtubeURL?: string;
+  playstoreURL?: string;
 }
 
-const Project = ({ title, githubUlR }: ProjectProps) => {
+const Project = ({
+  title,
+  githubURL,
+  youtubeURL,
+  bgimage,
+  playstoreURL,
+}: ProjectProps) => {
   return (
-    <div style={{ height: "100vh" }}>
-      <div
-        style={{ display: "flex", justifyContent: "center", margin: "30px" }}
-      >
-        <iframe
-          width={800}
-          height={600}
-          style={{ border: "none" }}
-          src="https://www.youtube.com/embed/J39ThUsYzQo?si=0xZ4OkhBZIa_3vjq"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"
-          allowFullScreen
-        ></iframe>
-        <div>
-          <h2>{title}</h2>
-          <a href={githubUlR}>GitHub</a>
-        </div>
+    <div className={style["projectcontainer"]}>
+      <div>
+        <img
+          style={{
+            width: "100%",
+            aspectRatio: "1/1",
+            objectFit: "cover",
+            borderRadius: "10px",
+          }}
+          src={bgimage}
+          alt=""
+        />
+      </div>
+      <div>
+        <h2 style={{ textAlign: "center", margin: "10px", color: "white" }}>
+          {title}
+        </h2>
+      </div>
+
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        {githubURL && (
+          <a href={githubURL} target="_blank">
+            <FontAwesomeIcon color="white" size="2x" icon={faGithub} />
+          </a>
+        )}
+        {youtubeURL && (
+          <a href={youtubeURL} target="_blank">
+            <FontAwesomeIcon
+              style={{ color: "red" }}
+              size="2x"
+              icon={faYoutube}
+            />
+          </a>
+        )}
+        {playstoreURL && (
+          <a href={playstoreURL} target="_blank">
+            <img style={{ width: "40px" }} src={image} alt="" />
+          </a>
+        )}
       </div>
     </div>
   );

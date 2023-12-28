@@ -5,10 +5,11 @@
   font-size: 1.125rem;
   opacity: 0;
   transition: all ease-in-out 1s;
+  color: white;
+  text-align: justify;
 }
 
 .main {
-  margin: 200px 20%;
 }
 
 .title {
