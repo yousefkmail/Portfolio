@@ -22,6 +22,7 @@ const ContactInfo = ({
         flexDirection: "column",
         alignItems: "center",
         padding: "20px",
+        width: "200px",
       }}
     >
       <a href={href}>

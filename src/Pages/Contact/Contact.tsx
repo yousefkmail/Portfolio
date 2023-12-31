@@ -21,6 +21,7 @@ const Contact = () => {
           display: "flex",
           marginTop: "90px",
           justifyContent: "center",
+          flexWrap: "wrap",
         }}
       >
         <ContactInfo

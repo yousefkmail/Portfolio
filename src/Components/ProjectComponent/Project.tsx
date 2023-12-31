@@ -2,18 +2,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import style from "./Project.module.css";
 import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import image from "../../assets/google-play-png-logo-3798.png";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 interface ProjectProps {
   bgimage: string;
   title: string;
   githubURL?: string;
   youtubeURL?: string;
   playstoreURL?: string;
+  TwitterURL?: string;
 }
 
 const Project = ({
   title,
   githubURL,
   youtubeURL,
+  TwitterURL,
   bgimage,
   playstoreURL,
 }: ProjectProps) => {
@@ -55,6 +58,11 @@ const Project = ({
         {playstoreURL && (
           <a href={playstoreURL} target="_blank">
             <img style={{ width: "40px" }} src={image} alt="" />
+          </a>
+        )}
+        {TwitterURL && (
+          <a href={TwitterURL} target="_blank">
+            <FontAwesomeIcon color="white" size="2x" icon={faXTwitter} />
           </a>
         )}
       </div>

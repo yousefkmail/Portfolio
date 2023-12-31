@@ -2,6 +2,7 @@ import Project from "../../Components/ProjectComponent/Project";
 import style from "./WorkExperience.module.css";
 import VFXSS from "../../assets/VFXSS.png";
 import PLIGSS from "../../assets/Wee-02.png";
+import XSS from "../../assets/x-social-media-white-icon.png";
 const WorkExperience = () => {
   return (
     <div className={style.experiencecontainer}>
@@ -22,6 +23,11 @@ const WorkExperience = () => {
           bgimage={PLIGSS}
           playstoreURL="https://play.google.com/store/apps/details?id=com.cuebat.plig&hl=en&gl=US"
           title="PLIG"
+        />
+        <Project
+          bgimage={XSS}
+          TwitterURL="https://youser-ali-twitter-clone.netlify.app/home"
+          title="Twitter clone"
         />
       </div>
     </div>
