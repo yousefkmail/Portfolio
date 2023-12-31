@@ -28,7 +28,7 @@ const Contact = () => {
           label="Email"
           info="yousef.hnaty@gmail.com"
           icon={faEnvelope}
-          href="mailto:yousef.hnaty@gmail.com"
+          href="mailto:yousefkmail169@gmail.com"
         />
         <ContactInfo
           href="https://www.facebook.com/yousefkma/"
