@@ -26,7 +26,7 @@ const Contact = () => {
       >
         <ContactInfo
           label="Email"
-          info="yousef.hnaty@gmail.com"
+          info="yousefkmail169@gmail.com"
           icon={faEnvelope}
           href="mailto:yousefkmail169@gmail.com"
         />
