@@ -69,7 +69,7 @@ const About = () => {
         <p ref={ref6} className={style.p}>
           As for game development, beside being a gamer, I loved being able to
           not only play other people's games, but also I could play my own
-          custom games, and experience the all phases of a game,including
+          custom games, and experience the all phases of a game, including
           development.
         </p>
         <p ref={ref7} className={style.p}>
