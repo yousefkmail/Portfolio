@@ -25,6 +25,12 @@ const About = () => {
     setTimeout(() => {
       ref5.current?.classList.add(style["show"]);
     }, 4000);
+    setTimeout(() => {
+      ref6.current?.classList.add(style["show"]);
+    }, 5000);
+    setTimeout(() => {
+      ref7.current?.classList.add(style["show"]);
+    }, 6000);
   }, []);
 
   return (
