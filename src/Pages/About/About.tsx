@@ -6,6 +6,8 @@ const About = () => {
   const ref3 = useRef<HTMLParagraphElement>(null);
   const ref4 = useRef<HTMLParagraphElement>(null);
   const ref5 = useRef<HTMLParagraphElement>(null);
+  const ref6 = useRef<HTMLParagraphElement>(null);
+  const ref7 = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
     setTimeout(() => {
@@ -30,14 +32,14 @@ const About = () => {
       <main className={style.main}>
         <h1 className={"themecolor " + style.title}>About Me</h1>
         <p ref={ref1} className={style.p}>
-          Hello there! I'm Yousef, a web and game developer that loves to create
-          unique, captivating experiences out of simple lines of code. A little
-          about the individual behind the screen
+          Hello there! I'm Yousef, a web and game developer that loves creating
+          unique and captivating experiences out of simple lines of code.
         </p>
         <p ref={ref2} className={style.p}>
-          My journey into programming started at the first your of university, 6
-          years ago, and since then I fell in love being part of poeple who
-          would change the world!.
+          My journey into programming started during the first year of
+          university as a computer engineering student, 6 years ago, and since
+          then I fell in love being part of the community that constantly try to
+          change the world!
         </p>
         <p ref={ref3} className={style.p}>
           I have been learning game and web development since 2020 and I have
@@ -57,6 +59,17 @@ const About = () => {
           my way of achieving that was by being a mern stack developer, adding
           Node.js, Mongodb, express.js to my knowledge. Additionally, learning
           firebase and adding it into my web development knowledge stack.
+        </p>
+        <p ref={ref6} className={style.p}>
+          As for game development, beside being a gamer, I loved being able to
+          not only play other people's games, but also I could play my own
+          custom games, and experience the all phases of a game,including
+          development.
+        </p>
+        <p ref={ref7} className={style.p}>
+          I have been using the Unity game engine since 2020, heavily investing
+          into learning it's components, such as animations, UI, shaders, game
+          architecture, 2D and sprites editor, network behaviour, and more.
         </p>
       </main>
     </div>
