@@ -7,6 +7,16 @@
 .porjectinnercontainer {
 }
 
+.image-container {
+  transition: all ease-in-out 0.2s;
+  margin-bottom: 20px;
+}
+
+.image-container:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
 @media (min-width: 576px) {
   .projectcontainer {
     width: 50%;

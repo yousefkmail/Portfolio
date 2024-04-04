@@ -6,6 +6,7 @@ import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 interface ProjectProps {
   bgimage: string;
   title: string;
+  imageURL?: string;
   githubURL?: string;
   youtubeURL?: string;
   playstoreURL?: string;
@@ -15,6 +16,7 @@ interface ProjectProps {
 const Project = ({
   title,
   githubURL,
+  imageURL,
   youtubeURL,
   TwitterURL,
   bgimage,
@@ -22,17 +24,19 @@ const Project = ({
 }: ProjectProps) => {
   return (
     <div className={style["projectcontainer"]}>
-      <div>
-        <img
-          style={{
-            width: "100%",
-            aspectRatio: "1/1",
-            objectFit: "cover",
-            borderRadius: "10px",
-          }}
-          src={bgimage}
-          alt=""
-        />
+      <div className={style["image-container"]}>
+        <a target="_blank" href={imageURL}>
+          <img
+            style={{
+              width: "100%",
+              aspectRatio: "1/1",
+              objectFit: "cover",
+              borderRadius: "10px",
+            }}
+            src={bgimage}
+            alt=""
+          />
+        </a>
       </div>
       <div>
         <h2 style={{ textAlign: "center", margin: "10px", color: "white" }}>

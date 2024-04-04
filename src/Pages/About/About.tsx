@@ -67,15 +67,10 @@ const About = () => {
           firebase and adding it into my web development knowledge stack.
         </p>
         <p ref={ref6} className={style.p}>
-          As for game development, beside being a gamer, I loved being able to
-          not only play other people's games, but also I could play my own
-          custom games, and experience the all phases of a game, including
-          development.
-        </p>
-        <p ref={ref7} className={style.p}>
-          I have been using the Unity game engine since 2020, heavily investing
-          into learning it's components, such as animations, UI, shaders, game
-          architecture, 2D and sprites editor, network behaviour, and more.
+          As for game development, I have been using the Unity game engine since
+          2020, heavily investing into learning it's components, such as
+          animations, UI, shaders, game architecture, 2D and sprites editor,
+          network behaviour, and more.
         </p>
       </main>
     </div>
