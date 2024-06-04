@@ -1,24 +1,9 @@
+import style from "./Footer.module.css";
 const Footer = () => {
   return (
-    <div
-      style={{
-        backgroundColor: "rgb(50,50,50)",
-        padding: "10px",
-        marginTop: "auto",
-      }}
-    >
-      <p
-        style={{
-          color: "white",
-          backgroundColor: "rgb(50,50,50)",
-          textTransform: "uppercase",
-          fontSize: "10px",
-          textAlign: "center",
-        }}
-      >
-        Yousef Ali - Game and web developer
-      </p>
-    </div>
+    <footer className={style["container"]}>
+      <p className={style["p"]}>Yousef Ali - Game and web developer</p>
+    </footer>
   );
 };
 

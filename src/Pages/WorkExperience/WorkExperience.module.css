@@ -1,26 +1,28 @@
-.link {
-  text-decoration: none;
-  background-color: #ff6600;
-  border-radius: 17px;
-  padding: 10px;
-  margin: 10px;
-}
+@layer css-module {
+  .link {
+    text-decoration: none;
+    background-color: #ff6600;
+    border-radius: 17px;
+    padding: 10px;
+    margin: 10px;
+  }
 
-.nav {
-  display: flex;
-  align-items: flex-end;
-  padding: 10px;
-  justify-content: space-between;
-}
+  .nav {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    justify-content: space-between;
+  }
 
-.experiencecontainer {
-  display: grid;
-  padding-top: 20px;
-  place-items: center;
-}
-.projectscontainer {
-  display: flex;
-  flex-wrap: wrap;
-  width: min(1200px, 100%);
-  justify-content: center;
+  .experiencecontainer {
+    display: grid;
+    padding-top: 20px;
+    place-items: center;
+  }
+  .projectscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: min(1200px, 100%);
+    justify-content: center;
+  }
 }

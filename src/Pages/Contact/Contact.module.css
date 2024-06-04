@@ -1,0 +1,22 @@
+@layer css-modules {
+  .h1 {
+    color: var(--secondary-theme-color);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .p {
+    text-align: center;
+  }
+  .container {
+    padding-top: 100px;
+    color: white;
+  }
+
+  .contact-container {
+    display: flex;
+    margin-top: 90px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

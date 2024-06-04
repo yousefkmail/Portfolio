@@ -1,36 +1,43 @@
-.projectcontainer {
-  width: 100%;
-  padding: 30px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.porjectinnercontainer {
-}
-
-.image-container {
-  transition: all ease-in-out 0.2s;
-  margin-bottom: 20px;
-}
-
-.image-container:hover {
-  scale: 1.1;
-  cursor: pointer;
-}
-
-@media (min-width: 576px) {
+@layer css-module {
   .projectcontainer {
-    width: 50%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    overflow: hidden;
   }
-}
 
-@media (min-width: 768px) {
-  .projectcontainer {
-    width: 50%;
+  .image-container {
+    transition: all ease-in-out 0.2s;
+    margin-bottom: 20px;
   }
-}
 
-@media (min-width: 992px) {
-  .projectcontainer {
-    width: 33.33%;
+  .preview-image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .image-container:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+
+  @media (min-width: 576px) {
+    .projectcontainer {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .projectcontainer {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .projectcontainer {
+      width: 33.33%;
+    }
   }
 }

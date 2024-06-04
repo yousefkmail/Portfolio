@@ -1,16 +1,28 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, NavLinkProps } from "react-router-dom";
 import style from "./Navbar.module.css";
+import { cva } from "class-variance-authority";
+const CustomNavLinkStyle = cva(style.link, {
+  variants: {
+    isActive: {
+      true: style.linkactive,
+    },
+  },
+});
 
-const CustomNavlink = (props: { to: string; label: string }) => {
+interface CustomNavlinkProps extends NavLinkProps {
+  activeClassName?: string;
+}
+
+const CustomNavlink = ({
+  className,
+  activeClassName,
+  ...rest
+}: CustomNavlinkProps) => {
   return (
     <NavLink
-      className={({ isActive }) =>
-        (isActive ? style.linkactive : "") + " " + style.link
-      }
-      to={props.to}
-    >
-      {props.label}
-    </NavLink>
+      {...rest}
+      className={({ isActive }) => CustomNavLinkStyle({ isActive, className })}
+    />
   );
 };
 

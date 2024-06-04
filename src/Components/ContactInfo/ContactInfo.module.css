@@ -1,0 +1,25 @@
+@layer css-modules {
+  .container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 200px;
+  }
+
+  .label {
+    color: var(--secondary-theme-color);
+    text-align: center;
+    padding: 10px;
+  }
+  .pressable-image {
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    border-radius: 9999px;
+    background-color: #323232;
+    color: white;
+  }
+}

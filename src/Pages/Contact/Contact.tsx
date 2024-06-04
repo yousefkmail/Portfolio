@@ -1,48 +1,35 @@
-import ContactInfo from "../../Components/ContactInfo/ContactInfo";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import style from "./Contact.module.css";
+import DefaultContactInfo from "../../Components/ContactInfo/DefaultContactInfo";
 const Contact = () => {
   return (
-    <div style={{ paddingTop: "100px", color: "white" }}>
-      <h1
-        style={{
-          color: "var(--secondary-theme-color)",
-          textAlign: "center",
-          marginBottom: "20px",
-        }}
-      >
-        Contact Me
-      </h1>
-
-      <p style={{ textAlign: "center" }}>I will reply as soon as possible.</p>
-      <div
-        style={{
-          display: "flex",
-          marginTop: "90px",
-          justifyContent: "center",
-          flexWrap: "wrap",
-        }}
-      >
-        <ContactInfo
+    <div className={style["container"]}>
+      <h1 className={style["h1"]}>Contact Me</h1>
+      <p className={style["p"]} style={{ textAlign: "center" }}>
+        {"I will reply as soon as possible."}
+      </p>
+      <div className={style["contact-container"]}>
+        <DefaultContactInfo
           label="Email"
           info="yousefkmail169@gmail.com"
           icon={faEnvelope}
           href="mailto:yousefkmail169@gmail.com"
         />
-        <ContactInfo
+        <DefaultContactInfo
           href="https://www.facebook.com/yousefkma/"
           label="Facebook"
           info="Yousef Kmail"
           icon={faFacebook}
         />
-        <ContactInfo
+        <DefaultContactInfo
           href="https://www.linkedin.com/in/yousef-kmail-6b7277245/"
           label="Linked in"
           info="Yousef Kmail"
           icon={faLinkedin}
         />
-        <ContactInfo
+        <DefaultContactInfo
           label="Number"
           info="+970568550124"
           icon={faPhone}

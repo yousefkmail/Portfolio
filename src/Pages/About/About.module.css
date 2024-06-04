@@ -1,21 +1,24 @@
-.p {
-  max-width: 400px;
-  margin: 20px 0;
-  line-height: 2rem;
-  font-size: 1.125rem;
-  opacity: 0;
-  transition: all ease-in-out 1s;
-  color: white;
-  text-align: justify;
-}
+@layer css-module {
+  .p {
+    max-width: 400px;
+    margin: 20px 0;
+    line-height: 2rem;
+    font-size: 1.125rem;
+    opacity: 0;
+    transition: all ease-in-out 1s;
+    color: white;
+    text-align: justify;
+  }
 
-.main {
-}
+  .test {
+    color: red;
+  }
 
-.title {
-  font-size: 46px;
-}
+  .title {
+    font-size: 46px;
+  }
 
-.show {
-  opacity: 1;
+  .show {
+    opacity: 1;
+  }
 }

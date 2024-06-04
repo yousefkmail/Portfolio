@@ -1,4 +1,6 @@
-.link {
-  color: var(--secondary-theme-color);
-  margin: 0 10px;
+@layer css-module {
+  .link {
+    color: var(--secondary-theme-color);
+    margin: 0 10px;
+  }
 }

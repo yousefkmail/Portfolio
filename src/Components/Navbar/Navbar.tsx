@@ -1,16 +1,18 @@
+import { HTMLAttributes } from "react";
 import CustomNavlink from "./CustomNavLink";
 import style from "./Navbar.module.css";
-const Navbar = () => {
+import { cva, cx } from "class-variance-authority";
+const NavbarStyles = cva(style.navbar);
+
+const Navbar = ({ className, ...rest }: HTMLAttributes<HTMLDivElement>) => {
   return (
-    <nav className={style.navbar}>
-      {/* <img src="" alt="" /> */}
+    <nav className={cx(NavbarStyles(), className)} {...rest}>
       <div className={style.links}>
-        <CustomNavlink to={"home"} label="Home" />
-        <CustomNavlink to={"about"} label="About" />
-        <CustomNavlink to={"contact"} label="Contact" />
+        <CustomNavlink to={"home"}>Home</CustomNavlink>
+        <CustomNavlink to={"about"}>About</CustomNavlink>
+        <CustomNavlink to={"contact"}>Contact</CustomNavlink>
       </div>
     </nav>
   );
 };
-
 export default Navbar;
