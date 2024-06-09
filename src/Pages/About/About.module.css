@@ -21,4 +21,8 @@
   .show {
     opacity: 1;
   }
+
+  .main {
+    margin: 30px;
+  }
 }
