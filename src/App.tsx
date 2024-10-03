@@ -1,15 +1,20 @@
 import { Footer, Navbar } from "./Components";
 import { MainRoute } from "./Routes";
+import { QueryClient, QueryClientProvider } from "react-query";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <div className="app-container">
-      <div>
-        <Navbar />
-        <MainRoute />
+    <QueryClientProvider client={queryClient}>
+      <div className="app-container">
+        <div>
+          <Navbar />
+          <MainRoute />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </QueryClientProvider>
   );
 }
 

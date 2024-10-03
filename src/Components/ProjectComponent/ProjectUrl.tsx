@@ -1,17 +1,15 @@
-import { IconDefinition } from "@fortawesome/free-regular-svg-icons";
-import {
-  FontAwesomeIcon,
-  FontAwesomeIconProps,
-} from "@fortawesome/react-fontawesome";
-
-interface ProjectUrlProps extends FontAwesomeIconProps {
+interface ProjectUrlProps {
   url: string;
-  icon: IconDefinition;
+  icon: string | undefined;
 }
-const ProjectUrl = ({ url, icon, ...rest }: ProjectUrlProps) => {
+const ProjectUrl = ({ url, icon }: ProjectUrlProps) => {
   return (
     <a href={url} target="_blank">
-      <FontAwesomeIcon {...rest} icon={icon} />
+      <img
+        style={{ width: "40px", height: "40px", objectFit: "cover" }}
+        src={icon}
+        alt=""
+      />
     </a>
   );
 };
